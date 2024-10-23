@@ -19,16 +19,16 @@ Here, the struct sigaction:
            You will understand when using sa_handler and sa_sigaction,
            how to set sa_mask with sigemptyset(), how set the sa_flags.
            
-           In particular 
-           sa_flags specifies a set of flags which modify the behavior of the 
-           signal. In the server you will yuse the flag SA_SIGINFO.
-           When you set this flag, then you should use sa_sigaction instead
-           of sa_hanler. This allows you to have one of the filed of sigiinfo_t,
-           that is si_pid (specified below).
-
-           sa_mask specifies a mask of signals  which  should  be  blocked.
-           If you apply sigemptyset() function to the mask, then you will not
-           block any signal.
+  In particular: 
+  - sa_flags specifies a set of flags which modify the behavior of the 
+    signal. In the server you will yuse the flag SA_SIGINFO.
+    When you set this flag, then you should use sa_sigaction instead
+    of sa_hanler. This allows you to have one of the filed of sigiinfo_t,
+    that is si_pid (specified below).
+    
+  - sa_mask specifies a mask of signals  which  should  be  blocked.
+    If you apply sigemptyset() function to the mask, then you will not
+    block any signal.
             
            
 Here, the struct siginfo_t:
