@@ -70,5 +70,5 @@ Here, the struct siginfo_t:
                            unsigned int si_arch;  /* Architecture of attempted system call
                                                      (since Linux 3.5) */
                        }
-            For the purpose of minitalk you need to use the filed si_pid which refers 
-            to the pid of sending process, that is the client.
+  For the purpose of minitalk you need to use the filed si_pid which refers 
+  to the pid of sending process, that is the client.
