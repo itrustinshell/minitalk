@@ -1,4 +1,4 @@
-This project explores basic communication between a server and a client.
+This project explores basics of signals between a basic communication betweem server and client.
 The communication is possible thanks to "signals".
 You will explore basics of library <signal.h>
 with some of its features.
