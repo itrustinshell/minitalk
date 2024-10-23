@@ -4,7 +4,7 @@ You will explore basics of library <signal.h>
 with some of its features.
 You will use:
 
-int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);
+    int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);
 
 Signum specifies the signal and can be one of SIGUSR1 or SIGUSR2
 
