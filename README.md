@@ -9,6 +9,7 @@ int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact)
 Signum specifies the signal and can be one of SIGUSR1 or SIGUSR2
 
 Here, the struct sigaction:
+
              struct sigaction {
                void     (*sa_handler)(int);
                void     (*sa_sigaction)(int, siginfo_t *, void *);
@@ -16,8 +17,8 @@ Here, the struct sigaction:
                int        sa_flags;
                void     (*sa_restorer)(void);
            };
-           You will understand when using sa_handler and sa_sigaction,
-           how to set sa_mask with sigemptyset(), how set the sa_flags.
+  You will understand when using sa_handler and sa_sigaction,
+  how to set sa_mask with sigemptyset(), how set the sa_flags.
            
   In particular: 
   - sa_flags specifies a set of flags which modify the behavior of the 
